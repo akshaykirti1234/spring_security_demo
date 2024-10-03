@@ -6,8 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
-	@GetMapping("/welcome")
-	public String welcome() {
-		return "welcome to spring security";
+	@GetMapping("/notice")
+	public String notice() {
+		return "welcome to notice API";
+	}
+
+	@GetMapping("/userLogin")
+	public String userLogin() {
+		return "user login API";
 	}
 }
